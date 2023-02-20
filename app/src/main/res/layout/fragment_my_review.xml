@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MyReviewFragment"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDCDCD"
+        android:id="@+id/recyclerReview" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:gravity="center"
+        android:text="로그인 또는 회원가입 후\n 리뷰 추가 기능을 이용할 수 있습니다."
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/logoutText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:text="로그인"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/loginBtn" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="회원가입"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/joinBtn" />
+    </LinearLayout>
+
+</LinearLayout>

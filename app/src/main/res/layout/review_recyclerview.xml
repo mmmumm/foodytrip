@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="맛집 이름"
+        android:textSize="15dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/placeName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="유저아이디"
+        android:textColor="?android:attr/textColorPrimary"
+        android:drawableStart="@drawable/account_icon"
+        android:drawablePadding="5dp"
+        android:id="@+id/writer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:isIndicator="true"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:id="@+id/starRate"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/gray_button"
+            android:text="수정"
+            android:textSize="12dp"
+            android:id="@+id/updateBtn"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:background="@drawable/gray_button"
+            android:text="삭제"
+            android:textSize="12dp"
+            android:id="@+id/deleteBtn"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:id="@+id/reviewImage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="내용적기"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="?android:attr/textColorPrimary"
+            android:drawableStart="@drawable/comment_image"
+            android:drawablePadding="5dp"
+            android:id="@+id/replyNum" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022.01.01"
+            android:id="@+id/createDate" />
+
+    </LinearLayout>
+
+</LinearLayout>
